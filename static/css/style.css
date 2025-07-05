@@ -1,0 +1,38 @@
+:root {
+    --black: #212738;
+    --bittersweet: #f97068;
+    --pear: #d1d646;
+    --white: #edf2ef;
+    --blue: #57c4e5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    background-color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#question {
+    background-color: var(--white);
+    padding: 70px 0px;
+}
+
+#question h2 {
+    text-align: center;
+}
+
+#question .row {
+    padding: 50px;
+}
+
+.subtitle {
+    font-size: 19px;
+}
+
+.reason {
+    font-size: 13px;
+}
