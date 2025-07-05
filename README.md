@@ -1,0 +1,2 @@
+# justrandomquote
+Dapatkan Random Quote
