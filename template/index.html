@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
+        <title>JustQuote</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <link rel="stylesheet" href="/static/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -19,25 +21,25 @@
             <section id="question">
                 <h2>Apa sih manfaat quote?</h2>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
                         <div class="col-12">
                             <p class="subtitle">Menyalakan semangat sehari-hari</p>
                             <p class="reason">Kutipan singkat bisa memantik motivasi besar. Dalam waktu kurang dari 10 detik, seseorang bisa merasa dipahami, tertantang, atau termotivasi hanya karena satu kalimat yang tepat di waktu yang pas. Ini seperti secangkir kopi... tapi dalam bentuk kata.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-duration="1050" data-aos-anchor-placement="bottom-bottom">
                         <div class="col-12">
                             <p class="subtitle">Membuka perspektif baru</p>
                             <p class="reason">Terkadang, kutipan bukan hanya soal semangat, tapi juga cara baru melihat dunia. Satu kalimat bisa membuka sudut pandang baru, memunculkan empati, atau bahkan menyadarkan kita akan hal-hal sederhana yang sering terlewat.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-duration="1100" data-aos-anchor-placement="top-bottom">
                         <div class="col-12">
                             <p class="subtitle">Menjadi jeda yang menenangkan</p>
                             <p class="reason">Di tengah arus informasi yang cepat dan konten berat, kutipan sederhana jadi oase yang tenang. Mereka tidak minta banyak waktu, tapi bisa memberi ketenangan atau senyum kecil yang membuat hari terasa lebih ringan.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-duration="1150" data-aos-anchor-placement="top-bottom">
                         <div class="col-12">
                             <p class="subtitle">Bahan refleksi dan percakapan</p>
                             <p class="reason">Sebuah quote bisa memancing refleksi pribadi atau diskusi bersama teman. Kadang kita tidak menyadari isi hati kita sendiri… sampai ada kutipan yang menampar halus. Dari situ, percakapan bermakna sering bermula.</p>
@@ -45,8 +47,22 @@
                     </div>
                 </div>
             </section>
+            
+            <section id="get-quote">
+                <div class="quote-container">
+                    <p id="quote-text">"Kutipan akan tampil di sini..."</p>
+                    <p id="quote-author">—</p>
+                    <button onclick="getQuote()" class="quote-btn">Get  <i class="fa-solid fa-dice"></i></button>
+                </div>
+            </section>
         </main>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d1d646" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,170.7C384,149,480,107,576,96C672,85,768,107,864,117.3C960,128,1056,128,1152,128C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
         <script src="/static/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
